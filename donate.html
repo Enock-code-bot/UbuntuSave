@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate - UbuntuSave</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#" id="lang-select">Language</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="donation-tiers mission">
+                <h1>Donation Tiers</h1>
+                <ul>
+                    <li><strong>$10</strong> = 1 meal/day</li>
+                    <li><strong>$50</strong> = 1 school uniform</li>
+                    <li><strong>$100</strong> = 1 month of shelter</li>
+                    <li><strong>$500</strong> = Support a child for 6 months</li>
+                </ul>
+            </section>
+            <section class="giving-options mission">
+                <h2>Giving Options</h2>
+                <form id="donation-form" action="javascript:void(0);" method="POST">
+                    <label>
+                        <input type="radio" name="donation-type" value="one-time" checked />
+                        One-Time Donation
+                    </label>
+                    <label>
+                        <input type="radio" name="donation-type" value="recurring" />
+                        Recurring Donation
+                    </label>
+                    <label for="donation-amount">Amount</label>
+                    <input type="number" id="donation-amount" name="donation-amount" min="1" required />
+                    <label>
+                        <input type="radio" name="payment-method" value="paypal" checked />
+                        PayPal
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="mobile-money" />
+                        Mobile Money
+                    </label>
+                    <button type="submit" class="btn-primary">Donate Now</button>
+                </form>
+                <div id="paypal-button-container" style="display:none;"></div>
+                <div id="mobile-money-message" style="display:none; color: green; font-weight: bold; margin-top: 1rem;"></div>
+            </section>
+            <section class="payment-gateway mission">
+                <h2>Secure Payment Gateway</h2>
+                <p>We accept payments via PayPal, Stripe, and Mobile Money for your convenience and security.</p>
+                <div class="payment-icons">
+                    <img src="images/paypal.png" alt="PayPal" />
+                    <img src="images/stripe.png" alt="Stripe" />
+                    <img src="images/mobile-money.png" alt="Mobile Money" />
+                </div>
+            </section>
+            <section class="impact-visuals mission">
+                <h2>Impact</h2>
+                <p>See how your donations make a difference through stories and visuals from our community.</p>
+                <img src="images/impact1.jpg" alt="Impact Visual 1" />
+                <img src="images/impact2.jpg" alt="Impact Visual 2" />
+            </section>
+            <section class="tax-info mission">
+                <h2>Tax Information & Transparency</h2>
+                <p>UbuntuSave is a registered charity. Donations are tax-deductible. We are committed to transparency and responsible use of funds.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 UbuntuSave. All rights reserved.</p>
+        </footer>
+        <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Volunteer - UbuntuSave</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html" class="active">Volunteer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="#" id="lang-select">Language</a>
+                    <ul id="lang-dropdown" class="lang-dropdown hidden">
+                        <li data-lang="en">English</li>
+                        <li data-lang="fr">Français</li>
+                        <li data-lang="rw">Kinyarwanda</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ways-to-help">
+            <h2>Ways to Help</h2>
+            <ul>
+                <li data-description="Share your knowledge and skills by teaching community members.">Teaching</li>
+                <li data-description="Help raise funds to support our programs and initiatives.">Fundraising</li>
+                <li data-description="Provide guidance and support to mentees to help them grow.">Mentoring</li>
+                <li data-description="Engage with the community through outreach activities and events.">Outreach</li>
+            </ul>
+            <div id="ways-to-help-description" class="ways-description">
+                <p>Select an option above to learn more.</p>
+            </div>
+        </section>
+
+        <section class="volunteer-form-section mission">
+            <h1 data-i18n-key="becomeVolunteer">Become a Volunteer</h1>
+            <form id="volunteer-form" action="#" method="POST">
+                <label for="volunteer-name" data-i18n-key="nameLabel">Name</label>
+                <input type="text" id="volunteer-name" name="volunteer-name" required />
+                
+                <label for="volunteer-email" data-i18n-key="emailLabel">Email</label>
+                <input type="email" id="volunteer-email" name="volunteer-email" required />
+                
+                <label for="volunteer-skills" data-i18n-key="skillsLabel">Skills / Interests</label>
+                <textarea id="volunteer-skills" name="volunteer-skills" rows="4" required></textarea>
+                
+                <button type="submit" class="btn-primary" data-i18n-key="signUp">Sign Up</button>
+            </form>
+            <div id="volunteer-message" role="alert" aria-live="polite"></div>
+        </section>
+
+        <section class="requirements-expectations">
+            <h2>Requirements &amp; Expectations</h2>
+            <p>We expect our volunteers to be committed, reliable, and passionate about making a difference. Volunteers should be willing to undergo any necessary training and adhere to our code of conduct.</p>
+        </section>
+
+        <section class="success-stories">
+            <h2>Success Stories from Volunteers</h2>
+            <article class="testimonial">
+                <p>"Volunteering with UbuntuSave has been a life-changing experience. I've met amazing people and made a real impact in the community."</p>
+                <p><strong>- Alex M.</strong></p>
+            </article>
+            <article class="testimonial">
+                <p>"The mentorship program allowed me to share my skills and help others grow. Highly rewarding!"</p>
+                <p><strong>- Priya S.</strong></p>
+            </article>
+        </section>
+
+        <section class="faqs">
+            <h2>FAQs for Volunteers</h2>
+            <dl>
+                <dt>Who can volunteer?</dt>
+                <dd>Anyone passionate about our cause and willing to contribute their time and skills.</dd>
+
+                <dt>How much time do I need to commit?</dt>
+                <dd>We appreciate any amount of time you can offer, from a few hours a week to more.</dd>
+
+                <dt>Is training provided?</dt>
+                <dd>Yes, we provide training to ensure you are well-prepared for your role.</dd>
+
+                <dt>Can I volunteer remotely?</dt>
+                <dd>Some roles allow remote volunteering; please inquire for details.</dd>
+            </dl>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UbuntuSave. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

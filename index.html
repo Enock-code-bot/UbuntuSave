@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UbuntuSave - Supporting Street Kids in Rwanda</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li>
+                    <a href="#" id="lang-select">Language</a>
+                    <ul id="lang-dropdown" class="lang-dropdown hidden">
+                        <li data-lang="en">English</li>
+                        <li data-lang="fr">Français</li>
+                        <li data-lang="rw">Kinyarwanda</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="hero">
+            <h1 data-i18n-key="heroTitle">Empowering Street Kids Through Care, Education, and Opportunity</h1>
+            <a href="donate.html" class="btn-primary" data-i18n-key="donateNow">Donate Now</a>
+            <a href="volunteer.html" class="btn-secondary" data-i18n-key="getInvolved">Get Involved</a>
+        </section>
+        <section class="mission">
+            <p data-i18n-key="missionText">UbuntuSave is dedicated to providing hope and opportunity to street children in Rwanda by offering safe shelter, quality education, and supportive mentorship programs rooted in community and culture.</p>
+        </section>
+        <section class="impact-numbers">
+            <div class="impact-item">
+                <h2>500+</h2>
+                <p data-i18n-key="kidsSupported">Kids Supported</p>
+            </div>
+            <div class="impact-item">
+                <h2>10+</h2>
+                <p data-i18n-key="shelters">Shelters</p>
+            </div>
+            <div class="impact-item">
+                <h2>100</h2>
+                <p data-i18n-key="volunteers">Volunteers</p>
+            </div>
+        </section>
+        <section class="programs-overview">
+            <h2 data-i18n-key="ourPrograms">Our Programs</h2>
+            <div class="program-card">
+                <h3 data-i18n-key="shelter">Shelter</h3>
+                <p data-i18n-key="shelterDesc">Safe and secure housing for street children.</p>
+            </div>
+            <div class="program-card">
+                <h3 data-i18n-key="education">Education</h3>
+                <p data-i18n-key="educationDesc">Access to quality education and learning resources.</p>
+            </div>
+            <div class="program-card">
+                <h3 data-i18n-key="mentorship">Mentorship</h3>
+                <p data-i18n-key="mentorshipDesc">Guidance and support from caring mentors.</p>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h2 data-i18n-key="whatPeopleSay">What People Say</h2>
+            <div id="testimonial-slider"></div>
+        </section>
+        <section class="newsletter-whatsapp">
+            <h2 data-i18n-key="stayConnected">Stay Connected</h2>
+            <form id="newsletter-form">
+                <label for="newsletter-email" data-i18n-key="subscribeNewsletter">Subscribe to our newsletter</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your email" required />
+                <button type="submit" class="btn-primary" data-i18n-key="subscribe">Subscribe</button>
+            </form>
+            <a href="https://wa.me/250700000000" target="_blank" class="btn-secondary whatsapp-link" data-i18n-key="chatWhatsApp">Chat with us on WhatsApp</a>
+        </section>
+        <section class="social-links">
+            <h2 data-i18n-key="followUs">Follow Us</h2>
+            <a href="#" aria-label="Facebook" class="social-icon">Facebook</a>
+            <a href="#" aria-label="Twitter" class="social-icon">Twitter</a>
+            <a href="#" aria-label="Instagram" class="social-icon">Instagram</a>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <p>&copy; 2025 UbuntuSave. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script src="whatsapp.js"></script>
+    <script src="testimonial.js"></script>
+</body>
+</html>

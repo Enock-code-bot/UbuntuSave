@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - UbuntuSave</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="#" id="lang-select">Language</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Reach out to us through any of the following ways.</p>
+            <ul>
+                <li><strong>Phone / WhatsApp:</strong> <a href="https://wa.me/250700000000" target="_blank" rel="noopener">+250 700 000 000</a></li>
+                <li><strong>Email:</strong> <a href="mailto:info@ubuntusave.org">info@ubuntusave.org</a></li>
+                <li><strong>Address:</strong> Kigali, Rwanda</li>
+            </ul>
+        </section>
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="#" method="POST">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="contact-name" required />
+                
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="contact-email" required />
+                
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="contact-subject" required />
+                
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div id="contact-message-status" role="alert" aria-live="polite"></div>
+        </section>
+        <section class="map-section">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.1234567890123!2d30.058853315258!3d-1.9440729999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dcae3f1a2b3c4d%3A0x123456789abcdef!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="UbuntuSave Location Map"></iframe>
+        </section>
+        <section class="social-links">
+            <h2>Follow Us</h2>
+            <a href="#" aria-label="Facebook" class="social-icon">Facebook</a>
+            <a href="#" aria-label="Twitter" class="social-icon">Twitter</a>
+            <a href="#" aria-label="Instagram" class="social-icon">Instagram</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 UbuntuSave. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
